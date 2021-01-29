@@ -7,3 +7,11 @@ zuul:
     licensestatic:
       path: /licensestatic/**
       url: http://license-static:8088
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+            thread:
+                timeoutInMilliseconds: 3000
+  
