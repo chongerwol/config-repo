@@ -12,6 +12,8 @@ hystrix:
     default:
       execution:
         isolation:
-            thread:
-                timeoutInMilliseconds: 3000
+          thread:
+            timeoutInMilliseconds: 3000
+      ribbon:
+        ReadTimeout: 7000
   
